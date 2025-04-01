@@ -314,12 +314,6 @@ export default function BirthdayPage() {
 
         <div className="flex gap-4 justify-center mt-8 flex-wrap">
           <Button
-            className="bg-primary text-white border-none py-3 px-6 text-base font-semibold rounded-xl cursor-pointer shadow-lg transition-all duration-300 flex items-center gap-2 hover:bg-rose-600 hover:scale-105"
-            onClick={playVideo}
-          >
-            <span>Watch Our Special Video</span> ▶️
-          </Button>
-          <Button
             variant="outline"
             className="bg-white text-primary border-2 border-primary py-3 px-6 text-base font-semibold rounded-xl cursor-pointer shadow-md transition-all duration-300 flex items-center gap-2 hover:bg-secondary hover:text-rose-600"
             onClick={() => alert("Gallery feature would display all your beautiful photos together!")}
