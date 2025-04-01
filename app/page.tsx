@@ -19,7 +19,7 @@ export default function BirthdayPage() {
   const audioRef = useRef<HTMLAudioElement>(null)
   const slideInterval = useRef<NodeJS.Timeout>()
 
-  const images = ["/images/image1.jpeg", "/images/image2.jpeg", "/images/image3.jpeg", "/images/IMG_3129.JPG", "/images/image6.jpeg"]
+  const images = ["/images/image1.jpeg", "/images/image2.jpeg", "/images/image3.jpeg"]
 
   const specialNotes = [
     "You are the sunshine that brightens my darkest days. Your smile is the light that guides me home.",
@@ -82,10 +82,12 @@ export default function BirthdayPage() {
   }
 
   const updateCountdown = () => {
-    const birthday = new Date()
+    // Set the target date to Australian time (Sydney/Melbourne)
+    const birthday = new Date(new Date().toLocaleString("en-US", { timeZone: "Australia/Sydney" }))
     birthday.setHours(23, 59, 59)
 
-    const now = new Date()
+    // Get current time in Australian time zone
+    const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Australia/Sydney" }))
     const diff = birthday.getTime() - now.getTime()
 
     if (diff <= 0) {
