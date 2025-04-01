@@ -19,7 +19,7 @@ export default function BirthdayPage() {
   const audioRef = useRef<HTMLAudioElement>(null)
   const slideInterval = useRef<NodeJS.Timeout>()
 
-  const images = ["/images/image1.jpeg", "/images/image2.jpeg", "/images/image3.jpeg", "/images/image4.jpeg", "/images/image5.jpeg", "/images/image6.jpeg"]
+  const images = ["/images/image1.jpeg", "/images/image2.jpeg", "/images/image3.jpeg", "/images/IMG_3129.JPG", "/images/image6.jpeg"]
 
   const specialNotes = [
     "You are the sunshine that brightens my darkest days. Your smile is the light that guides me home.",
