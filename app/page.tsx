@@ -318,7 +318,6 @@ export default function BirthdayPage() {
             className="bg-white text-primary border-2 border-primary py-3 px-6 text-base font-semibold rounded-xl cursor-pointer shadow-md transition-all duration-300 flex items-center gap-2 hover:bg-secondary hover:text-rose-600"
             onClick={() => alert("Gallery feature would display all your beautiful photos together!")}
           >
-            <span></span> 📸
           </Button>
         </div>
       </Card>
